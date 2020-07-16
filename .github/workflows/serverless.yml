@@ -31,6 +31,7 @@ jobs:
       run: npm install -g serverless
     - name: Auto deploy
       env: # Or as an environment variable
+        stage: dev
         TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
         TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
       run: sls deploy
