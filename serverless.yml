@@ -10,7 +10,7 @@ inputs:
     src: ./ 
     exclude:
       - .env
-  region: ap-guangzhou
+  region: ap-shanghai
   runtime: Nodejs10.15
   functionName: express-demo-${stage} #云函数名称
   apigatewayConf:
